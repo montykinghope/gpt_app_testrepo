@@ -2,11 +2,11 @@ function sendPrompt() {
     const promptInput = document.getElementById("promptInput").value;
     const responseOutput = document.getElementById("responseOutput");
 
-    fetch('YOUR_AZURE_FUNCTION_URL', {
+    fetch('https://gpt-test-function.azurewebsites.net', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'x-functions-key': 'YOUR_FUNCTION_KEY' // If needed for your function's authentication
+            'x-functions-key': 'vNbv0biAuW-AUCvBfAB4-p1DtSQM0Nhfb5XpUTe3H3QxAzFuPYfgNw==' // If needed for your function's authentication
         },
         body: JSON.stringify({ body: promptInput })
     })
