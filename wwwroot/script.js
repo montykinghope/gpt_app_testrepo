@@ -2,7 +2,7 @@ function sendPrompt() {
     const promptInput = document.getElementById("promptInput").value;
     const responseOutput = document.getElementById("responseOutput");
 
-    fetch('https://gpt-test-function.azurewebsites.net', {
+    fetch('https://gpt-test-function.azurewebsites.net/api/gpt_function', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
