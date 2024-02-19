@@ -5,7 +5,7 @@ from openai import OpenAI
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
     try:
-        # Extract the prompt from the HTTP request
+        # Extract the prompt from the HTTP
         req_body = req.get_json()
         prompt = req_body.get('body')  # Assuming the prompt is passed in the 'body' key
 
